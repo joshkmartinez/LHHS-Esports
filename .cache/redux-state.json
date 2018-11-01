@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6301feb7b319ca67819f71d4f3d383c9",
+        "contentDigest": "5e228d6bb2b299295828a5ab8133f11c",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -228,7 +228,10 @@
           "gatsby-plugin",
           "styled-components"
         ],
-        "author": "Guten Ye <ywzhaifei@gmail.com>",
+        "author": {
+          "name": "Guten Ye",
+          "email": "ywzhaifei@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -302,7 +305,10 @@
           "noscript",
           "style"
         ],
-        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "matthews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -364,7 +370,10 @@
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -428,6 +437,14 @@
         "license": "MIT",
         "dependencies": [
           {
+            "name": "@material-ui/core",
+            "version": "^3.3.2"
+          },
+          {
+            "name": "@material-ui/icons",
+            "version": "^3.0.1"
+          },
+          {
             "name": "gatsby",
             "version": "^1.9.277"
           },
@@ -470,6 +487,10 @@
           {
             "name": "styled-components",
             "version": "^3.4.1"
+          },
+          {
+            "name": "typeface-roboto",
+            "version": "0.0.54"
           }
         ],
         "devDependencies": [],
@@ -510,7 +531,10 @@
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -570,34 +594,13 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-10-30T03:38:06.421Z",
+      "buildTime": "2018-11-01T00:08:24.002Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "c4811d9ff33365d292f283e8d22ca259",
+        "contentDigest": "eae267806b5cc8ae37d7a830112f6889",
         "type": "Site",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /hackathon/resources/": {
-      "layout": null,
-      "jsonName": "hackathon-resources.json",
-      "internalComponentName": "ComponentHackathonResources",
-      "path": "/hackathon/resources/",
-      "component": "/Users/joshuamartinez/Desktop/LHHS-Esports/src/pages/hackathon/resources.js",
-      "componentChunkName": "component---src-pages-hackathon-resources-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
-      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
-      "componentPath": "/Users/joshuamartinez/Desktop/LHHS-Esports/src/pages/hackathon/resources.js",
-      "id": "SitePage /hackathon/resources/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "18388ce55d8374265c8c5e259f9079ab",
-        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -617,7 +620,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fcd9fc201c3bfa1065cdf4a2be7d2f10",
+        "contentDigest": "c738370f268b3eee6099925ebcf98787",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /tournaments/": {
+      "layout": null,
+      "jsonName": "tournaments.json",
+      "internalComponentName": "ComponentTournaments",
+      "path": "/tournaments/",
+      "component": "/Users/joshuamartinez/Desktop/LHHS-Esports/src/pages/tournaments.js",
+      "componentChunkName": "component---src-pages-tournaments-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/joshuamartinez/Desktop/LHHS-Esports/src/pages/tournaments.js",
+      "id": "SitePage /tournaments/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b52a335999f36f833f96d54a3a637c7a",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -625,7 +649,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "51a0be88823ce329a3e48791b8eacf72"
+    "PLUGINS_HASH": "213255ae55b2655df261df573719961d"
   },
   "componentDataDependencies": {
     "nodes": {},

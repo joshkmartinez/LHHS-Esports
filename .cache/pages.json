@@ -6,15 +6,15 @@
         "path": "/dev-404-page/"
     },
     {
-        "componentChunkName": "component---src-pages-hackathon-resources-js",
-        "layout": null,
-        "jsonName": "hackathon-resources.json",
-        "path": "/hackathon/resources/"
-    },
-    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": null,
         "jsonName": "index.json",
         "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-tournaments-js",
+        "layout": null,
+        "jsonName": "tournaments.json",
+        "path": "/tournaments/"
     }
 ]
