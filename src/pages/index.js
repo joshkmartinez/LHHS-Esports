@@ -62,32 +62,37 @@ const pages = (
 function ButtonAppBar(props) {
   const { classes } = props;
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton className={classes.menuButton} onClick={toggleDrawer()} color="inherit" aria-label="Menu">
+    <div>
+      <div className={classes.root}>
+        <AppBar position="static">
+          <Toolbar>
+            {/*<IconButton className={classes.menuButton} onClick={toggleDrawer()} color="inherit" aria-label="Menu">
             <MenuIcon />
-          </IconButton>
-          <Drawer open={drawerState} onClose={toggleDrawer(true)}>
-            <div
-              tabIndex={0}
-              role="button"
-              onClick={toggleDrawer(false)}
-              onKeyDown={toggleDrawer(false)}
-            >
-              {pages}
-            </div>
-          </Drawer>
-          <Typography variant="title" color="inherit" className={classes.grow}>
-            Laguna Hills High School Esports Club
+          </IconButton>*/}
+            <Drawer open={drawerState} onClose={toggleDrawer(true)}>
+              <div
+                tabIndex={0}
+                role="button"
+                onClick={toggleDrawer(false)}
+                onKeyDown={toggleDrawer(false)}
+              >
+                {pages}
+              </div>
+            </Drawer>
+            <Typography variant="title" color="inherit" className={classes.grow}>
+              Laguna Hills High School Esports Club
           </Typography>
-          <div>
-            <img
-              src={require('../images/lh.png')} width="60" height="42"
-            /></div>
-        </Toolbar>
-      </AppBar>
-    </div>
+            <div>
+              <img
+                src={require('../images/lh.png')} width="60" height="42"
+              /></div>
+          </Toolbar>
+        </AppBar>
+        <div display="inline"
+          float="none">
+          <iframe styles={{ width: 123 }} src="https://calendar.google.com/calendar/embed?src=42754uki8qmtnfuva13rrk44vs%40group.calendar.google.com&ctz=America%2FLos_Angeles" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div></div>
   );
 }
 
