@@ -67,7 +67,7 @@ export default isOpen => (
               styles={{ alignItems: "center", width: "30%" }}
             >
               <Centered>
-                <div class="glitch large" data-text="Hawk Gaming Club">
+                <div class="glitch large" data-text="">
                   Hawk Gaming Club
                 </div>
               </Centered>
