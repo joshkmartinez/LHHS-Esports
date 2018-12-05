@@ -65,7 +65,7 @@ function ButtonAppBar(props) {
         <div>
 
             <Typography >
-                Laguna Hills High School Esports Club
+                Laguna Hills High School Esports Club Tournaments
           </Typography></div>
     );
 }
