@@ -1,104 +1,182 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import 'typeface-roboto'
+import React from "react";
+import { View } from "react";
+import "../style.css";
+import { mx } from "../screensizes";
+import {
+  Heading,
+  Flex,
+  Column,
+  Box,
+  Container,
+  Link,
+  Text,
+  Image,
+  Card
+} from "rebass";
+import {
+  Wrapper,
+  SmallerWrapper,
+  Icon,
+  Medium,
+  SocialMedia,
+  Paragraph,
+  Project,
+  ProjectTitle,
+  ProjectDesc,
+  ProjectFinish,
+  Footer
+} from "../components/components";
+import styled from "styled-components";
+import Helmet from "react-helmet";
+import Paper from "@material-ui/core/Paper";
 
-const styles = {
-  root: {
-    flexGrow: 1,
-  },
-  grow: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-  },
-};
-var drawerState = false;
+export default isOpen => (
+  <React.Fragment>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    
+    <Wrapper>
+      <Helmet
+        title="Hawks Gaming Club"
+        meta={[
+          {
+            name: "description",
+            content: "Laguna Hills High School Esports Clubs"
+          },
+          {
+            name: "keywords",
+            content:
+              "Hawk, Gaming, LHHS, Hawk Gaming Club"
+          }
+        ]}
+      />
 
-function toggleDrawer(open) {
-  drawerState = open
+      <CenteredBox>
+        <HeaderBlock>
+          
+          <CenteredBlock>
+            <Card
+              borderRadius={21}
+              boxShadow="0 3px 21px rgba(0, 0, 0, 0.25)"
+              styles={{ alignItems: "center", width: "30%" }}
+            >
+              <Centered>
+                <div class="glitch large" data-text="Hawk Gaming Club">
+                  Hawk Gaming Club
+                </div>
+              </Centered>
+              {/*<div class="glitch small" data-text="">I create cool things</div>*/}
+            </Card>
+          </CenteredBlock>
+          <Break />
+          
+        </HeaderBlock>
+      </CenteredBox>
+    </Wrapper>
+    <Break />
 
+    <Break />
+    {/*
+<Footer>
+  <CenteredBlock>
+    💙 Joshua Martinez
+    <br />
+    <br />
+    <CenteredBox>
+      <SocialMedia href="https://github.com/joshkmartinez" icon="github" />
 
-};
-
-const pages = (
-  <div>
-    <List>
-      {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-        <ListItem button key={text}>
-          <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-          <ListItemText primary={text} />
-        </ListItem>
-      ))}
-    </List>
-    <Divider />
-    <List>
-      {['All mail', 'Trash', 'Spam'].map((text, index) => (
-        <ListItem button key={text}>
-          <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-          <ListItemText primary={text} />
-        </ListItem>
-      ))}
-    </List>
-  </div>
+      <SocialMedia href="https://twitter.com/joshkmartinez" icon="twitter" />
+      <SocialMedia
+        href="https://instagram.com/joshkmartinez"
+        icon="instagram"
+      />
+      <SocialMedia href="mailto:joshkmartinez@gmail.com" icon="mail" />
+    </CenteredBox>
+  </CenteredBlock>
+</Footer>*/}
+  </React.Fragment>
 );
 
-function ButtonAppBar(props) {
-  const { classes } = props;
-  return (
-    <div>
-      <div className={classes.root}>
-        <AppBar position="static">
-          <Toolbar>
-            {/*<IconButton className={classes.menuButton} onClick={toggleDrawer()} color="inherit" aria-label="Menu">
-            <MenuIcon />
-          </IconButton>*/}
-            <Drawer open={drawerState} onClose={toggleDrawer(true)}>
-              <div
-                tabIndex={0}
-                role="button"
-                onClick={toggleDrawer(false)}
-                onKeyDown={toggleDrawer(false)}
-              >
-                {pages}
-              </div>
-            </Drawer>
-            <Typography variant="title" color="inherit" className={classes.grow}>
-              Laguna Hills High School Esports Club
-          </Typography>
-            <div>
-              <img
-                src={require('../images/lh.png')} width="60" height="42"
-              /></div>
-          </Toolbar>
-        </AppBar>
-        
-        <div display="inline"
-          float="none">
-          <iframe styles={{ width: 123 }} src="https://calendar.google.com/calendar/embed?src=42754uki8qmtnfuva13rrk44vs%40group.calendar.google.com&ctz=America%2FLos_Angeles" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-      </div></div>
-  );
-}
+const Hello = Heading.extend.attrs({ m: 0, fontSize: 50, textAlign: "left" })`
+  position: relative;
+  left: -6px;
 
-ButtonAppBar.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+  ${mx[0]} {
+    left: 0px;
+  }
+  line-height: 1.5;
+  color: black;
+  font-family: "Averta-Bold";
+`;
+const SmallerHello = Heading.extend.attrs({
+  fontSize: 45,
+  mr: 3,
+  textAlign: "center"
+})`
+  line-height: 1.5;
+  color: white;
+  font-family: "Averta-Bold";
+`;
+const Subhead = Heading.extend.attrs({
+  f: 6,
+  m: 0,
+  fontSize: 30,
+  textAlign: "center"
+})`
+  line-height: 2;
+  color: white;
+  font-family: "Averta-Bold";
+`;
+const Left = Flex.extend.attrs()`
+  position: relative;
+  left: -25px;
+  ${mx[0]} {
+    left: -7px;
+  }
+`;
+const CenteredBox = Column.extend.attrs({})`
+  display: flex;
+  justify-content: center;
+`;
 
-export default withStyles(styles)(ButtonAppBar);
+const Centered = Box.extend.attrs({})`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const Break = Flex.extend.attrs({
+  flexDirection: ["column", "row"],
+  px: 3
+})`
+  text-align: center;
+  ${mx[0]} {
+    min-height: 5vh;
+    text-align: left;
+  }
+`;
+
+const HeaderBlock = Column.extend.attrs({ py: 2, pl: [null, 5] })`
+  ${mx[0]} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+`;
+const CenteredBlock = Column.extend.attrs({
+  py: 2,
+  ml: [-25, 210],
+  mr: [-40, 240]
+})`
+  ${mx[0]} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+`;
