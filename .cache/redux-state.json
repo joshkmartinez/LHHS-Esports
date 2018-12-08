@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c7cfaaf078d699f991b3cee67ecc656b",
+        "contentDigest": "cffaa08221dccf148b4d338cee632201",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -228,10 +228,7 @@
           "gatsby-plugin",
           "styled-components"
         ],
-        "author": {
-          "name": "Guten Ye",
-          "email": "ywzhaifei@gmail.com"
-        },
+        "author": "Guten Ye <ywzhaifei@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -305,10 +302,7 @@
           "noscript",
           "style"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "matthews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -370,10 +364,7 @@
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -438,7 +429,7 @@
         "dependencies": [
           {
             "name": "@material-ui/core",
-            "version": "^3.3.2"
+            "version": "^3.6.1"
           },
           {
             "name": "@material-ui/icons",
@@ -474,7 +465,7 @@
           },
           {
             "name": "lodash",
-            "version": "^4.17.10"
+            "version": "^4.17.11"
           },
           {
             "name": "react-helmet",
@@ -531,10 +522,7 @@
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -594,12 +582,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-12-05T03:22:07.724Z",
+      "buildTime": "2018-12-08T07:02:30.792Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "97efb62605e8010b965883071d2f9365",
+        "contentDigest": "db1ee909dace0cb06e8256dbd4ffbbb2",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -620,7 +608,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8ee084964afde91f7cd225a6cd3af8f8",
+        "contentDigest": "2acd7bd330e37720ec9501c6ca3f1de8",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -641,7 +629,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "18be2ed58bf3f920b259229d012873e5",
+        "contentDigest": "eb0a46eba1e22ae86ccde4a49d822121",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -649,7 +637,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "213255ae55b2655df261df573719961d"
+    "PLUGINS_HASH": "3d3b386e102f309f64572ac37d12f426"
   },
   "componentDataDependencies": {
     "nodes": {},

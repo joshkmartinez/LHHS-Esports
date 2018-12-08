@@ -40,26 +40,24 @@ export default isOpen => (
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    
+
     <Wrapper>
       <Helmet
         title="Hawks Gaming Club"
         meta={[
           {
             name: "description",
-            content: "Laguna Hills High School Esports Clubs"
+            content: "Laguna Hills High School Esports Club"
           },
           {
             name: "keywords",
-            content:
-              "Hawk, Gaming, LHHS, Hawk Gaming Club"
+            content: "Hawk, Gaming, LHHS, Hawk Gaming Club, LHHS Esports, LHHS Gaming"
           }
         ]}
       />
 
       <CenteredBox>
         <HeaderBlock>
-          
           <CenteredBlock>
             <Card
               borderRadius={21}
@@ -75,31 +73,16 @@ export default isOpen => (
             </Card>
           </CenteredBlock>
           <Break />
-          
         </HeaderBlock>
       </CenteredBox>
     </Wrapper>
     <Break />
 
     <Break />
-    {/*
-<Footer>
-  <CenteredBlock>
-    💙 Joshua Martinez
-    <br />
-    <br />
-    <CenteredBox>
-      <SocialMedia href="https://github.com/joshkmartinez" icon="github" />
 
-      <SocialMedia href="https://twitter.com/joshkmartinez" icon="twitter" />
-      <SocialMedia
-        href="https://instagram.com/joshkmartinez"
-        icon="instagram"
-      />
-      <SocialMedia href="mailto:joshkmartinez@gmail.com" icon="mail" />
-    </CenteredBox>
-  </CenteredBlock>
-</Footer>*/}
+    <Footer>
+      <CenteredBlock>Site created by Joshua Martinez</CenteredBlock>
+    </Footer>
   </React.Fragment>
 );
 

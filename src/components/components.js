@@ -108,6 +108,6 @@ export const StyledBoxFinish = Box.extend.attrs({})`
 
 export const Footer = Text.extend.attrs({py: 1, textAlign: 'center'})`
   font-family: 'Averta';
-  color: white;
+  color: black;
   line-height: 1;
 `
